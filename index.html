@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bright Futures Daycare</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background-color: #fffaf5;
+      color: #333;
+    }
+
+    header {
+      background-color: #ffcc70;
+      color: #333;
+      padding: 1.5rem 2rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    nav {
+      margin-top: 1rem;
+    }
+
+    nav a {
+      margin: 0 1rem;
+      color: #333;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1604079628041-9433a5f7ac07?auto=format&fit=crop&w=1600&q=80') no-repeat center center/cover;
+      height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 1px 1px 5px #000;
+    }
+
+    .hero h2 {
+      font-size: 3rem;
+    }
+
+    .section {
+      padding: 3rem 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .section h3 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #ff914d;
+    }
+
+    .programs ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .programs li {
+      background: #fff2e0;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      border-left: 5px solid #ff914d;
+    }
+
+    .contact form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .contact input, .contact textarea {
+      padding: 0.8rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .contact button {
+      background: #ff914d;
+      color: white;
+      padding: 0.8rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .contact button:hover {
+      background: #ff7b1d;
+    }
+
+    footer {
+      background: #ffd699;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+
+    @media (max-width: 600px) {
+      .hero h2 {
+        font-size: 2rem;
+        text-align: center;
+        padding: 0 1rem;
+      }
+
+      nav {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Bright Futures Daycare</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#programs">Programs</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Nurturing Minds & Growing Smiles</h2>
+  </section>
+
+  <section class="section" id="about">
+    <h3>About Us</h3>
+    <p>Bright Futures Daycare is a safe, inclusive, and fun-filled environment where children thrive emotionally, socially, and academically. Our trained staff is dedicated to creating a nurturing space where every child feels loved and inspired to learn.</p>
+  </section>
+
+  <section class="section programs" id="programs">
+    <h3>Our Programs</h3>
+    <ul>
+      <li><strong>Infants (0-18 months):</strong> Gentle care and stimulation for early development.</li>
+      <li><strong>Toddlers (18 months - 3 years):</strong> Interactive play and early learning activities.</li>
+      <li><strong>Preschool (3-5 years):</strong> Structured learning to prepare for kindergarten.</li>
+      <li><strong>After School Care (5-10 years):</strong> Homework help, fun, and games after school hours.</li>
+    </ul>
+  </section>
+
+  <section class="section contact" id="contact">
+    <h3>Contact Us</h3>
+    <form>
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Bright Futures Daycare. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
